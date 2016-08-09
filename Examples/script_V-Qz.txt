@@ -1,0 +1,16 @@
+script.script_V-Qz.txt
+script_V-Qz.plt
+tcdb55c2d_AL3trimmed3.txt
+    1.0000    300    0.010000   0.1000000E-08   0.1000000E-08   0.1000000E+01 0.1000000E-03     25      25     500
+1   SI(65.8199)AL(9.3032)FE(3.6981)MG(2.3950)MN(0.0021)CA(0.1544)NA(0.9600)K(2.5900)TI(0.7900)H(100)O(?)  *   ED17a Step32 prescr1a Rim
+
+
+
+
+
+TC  450  650
+P  4000  8500
+quartz  vol%  50.0  70.0  1.0
+1
+ 0.0000000E+00   0.0000000E+00
+_script_V-Qz_pix\
