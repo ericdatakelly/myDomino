@@ -36,13 +36,17 @@ def format_bulk_comp(dict_name):
             + ')O('  + str(dict_name['O'])  + ')  *  ')
     return string
 
-def format_calc_params(string):
-# Ensure there are four spaces in front of the string
+def format_leading_spaces(string,num):
+# Ensure the correct number of spaces in front of the string
+    spaces = ''
+    for n in range(0,num):
+        spaces+=' '
+
     temp_list = re.split('\s+| |\t+',string)
     if temp_list[0]:
-        string = "    " + string[string.find(temp_list[0]):]
+        string = spaces + string[string.find(temp_list[0]):]
     else:
-        string = "    " + string[string.find(temp_list[1]):]
+        string = spaces + string[string.find(temp_list[1]):]
     return string
 
 
@@ -88,7 +92,7 @@ def write_script(
     output_file.write('script_' + name + '.plt\n')           # Graphics output name used by guzzler
     output_file.write(dataset_name + '\n')                   # Name of thermodynamic dataset
     output_file.write(calc_params + '\n')                    # Calculation parameters for theriak
-                                                             # (Improvement: get the names from the guide and call them advanced options)
+                                                             # (Improvement: get the names from the guide and call them advanced options. See spreadsheet in TD folder)
     output_file.write(bulk_comp + bulk_comp_name + '\n')     # Chemical information (bulk composition)
     output_file.write('\n\n\n\n\n')                          # These lines are commonly empty
     output_file.write(x_def + '\n')                          # Parameters for abscissa
@@ -119,12 +123,12 @@ def main():
 
     # Format values that do not change for each script file
     bulk_comp_formatted = format_bulk_comp(calc_options_dict['bc'])
-    calc_params_formatted = format_calc_params(calc_options_dict['calc_params'])
+    calc_params_formatted = format_leading_spaces(calc_options_dict['calc_params'],4)
+    const_PT_formatted = format_leading_spaces(calc_options_dict['const_PT'],1)
 
     # Format some common parameters to add two or three spaces between items
     x_def_formatted = '  '.join(str(item) for item in calc_options_dict['x_def'])
     y_def_formatted = '  '.join(str(item) for item in calc_options_dict['y_def'])
-    const_PT_formatted = (' ' + '   '.join(str(item) for item in calc_options_dict['const_PT'])) # This needs a leading space for TD
     
     # Write the files: Cycle through each script name and write a script file
     for k in calc_options_dict['calc_type']: # Each key (k) is a script file name and 
