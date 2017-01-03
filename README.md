@@ -16,7 +16,7 @@ The EBC calculator will process chemical data to generate chemical bulk composit
 * Easily choose calculation options with ability to save and document choices (associated with project/sample).  It will include suggested calculation options and other help/tutorial features.
 * Easily setup batch runs to model several systems overnight or over days/weeks depending on model complexity and computation speeds.
 
-<img src="https://github.com/ericdavidkelly/myDomino/blob/myDomino_GUI/Examples/gui_example4b.png"/>
+<img src="https://github.com/ericdavidkelly/myDomino/blob/master/Examples/gui_example4b.png"/>
 
 
 ### Examples of Analysis Output
@@ -24,16 +24,16 @@ The EBC calculator will process chemical data to generate chemical bulk composit
 * Ability to output typical plots and quantitative measures of model fit, custom choices of plot axes, or statistical values.
 * Graphical tools for examining phase diagrams (layered vector graphics labeled for reactions and phase assemblages).  Layers can be viewed as transparent or simply hidden (like Illustrator).
 
-<img src="https://github.com/ericdavidkelly/myDomino/blob/myDomino_analysis/Examples/EBC_example.png" width="400"/>
+<img src="https://github.com/ericdavidkelly/myDomino/blob/master/Examples/EBC_example.png" width="400"/>
 
-<img src="https://github.com/ericdavidkelly/myDomino/blob/myDomino_analysis/Examples/Vol_example.png" width="400"/>
+<img src="https://github.com/ericdavidkelly/myDomino/blob/master/Examples/Vol_example.png" width="400"/>
 
 
 ### Examples of Graphical Analysis
 
 * Graphical tools for examining phase diagrams (layered vector graphics labeled for reactions and phase assemblages).  Layers can be viewed as transparent or simply hidden (like Illustrator).  The upper image is a stack of typical raw layers.  The program will provide easy cleanup of raw files to generate graphical results like in the lower image.
 
-<img src="https://github.com/ericdavidkelly/myDomino/blob/myDomino_analysis/Examples/IPD_raw_example.png" width="700"/>
+<img src="https://github.com/ericdavidkelly/myDomino/blob/master/Examples/IPD_raw_example.png" width="700"/>
 
-<img src="https://github.com/ericdavidkelly/myDomino/blob/myDomino_analysis/Examples/IPD_example.png" width="525"/>
+<img src="https://github.com/ericdavidkelly/myDomino/blob/master/Examples/IPD_example.png" width="525"/>
 
